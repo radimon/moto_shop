@@ -28,7 +28,7 @@ Motorcycle owners face two recurring problems: it is hard to tell which parts ac
 
 ## Architecture
 
-![System architecture](docs/architecture.png)
+![System architecture](docs/architecture_en.png)
 
 | Tier | Technology |
 |---|---|
@@ -42,7 +42,7 @@ The frontend never talks to the database directly — all data access goes throu
 
 15 tables in four groups. Full DDL: [`database/schema.sql`](database/schema.sql)
 
-![ERD](docs/erd.png)
+![ERD](docs/ERD.png)
 
 | Group | Tables |
 |---|---|
@@ -71,7 +71,7 @@ Key design decisions:
 | `POST` | `/api/orders` | Create an order (transactional stock deduction) |
 | `POST` | `/api/vehicles/{id}/maintenance` | Add a service record |
 
-The full specification is in the [project plan](docs/project-plan.pdf). Once the backend is running, interactive docs are available at `http://localhost:8000/docs`.
+The full specification is in the [project plan](docs/project_plan_v3.pdf). Once the backend is running, interactive docs are available at `http://localhost:8000/docs`.
 
 ## Project Timeline
 
@@ -107,7 +107,7 @@ Backend and frontend setup instructions will be added as implementation progress
 ## Repository Structure
 
 ```
-moto-shop/
+moto_shop/
 ├── docs/        Project plan, ERD, Gantt chart, architecture diagram
 ├── database/    Schema (DDL) and seed data
 ├── backend/     FastAPI application
